@@ -1,0 +1,44 @@
+{
+  "name": "checkin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csv": "*",
+    "nodemailer": "~0.6.0",
+    "xlsjs": "*",
+    "iconv-lite": "*",
+    "moment": "~2.5.0",
+    "mocha": "~1.17.0",
+    "handlebars": "~1.3.0",
+    "nexe": "~0.2.8",
+    "iconv": "~2.0.7",
+    "coffee": "0.0.1"
+  },
+  "devDependencies": {},
+  "config": {
+    "blanket": {
+      "pattern": [
+        "logic/send_mail.js",
+        "logic/DealMap.js",
+        "logic/duty.js",
+        "logic/getEmailList.js",
+        "logic/getLeaderList.js",
+        "libs/GBK2UTF8",
+        "libs/XLS2CSV",
+        "Person.js",
+        "Attendence/index.js",
+        "handle_filedata.js",
+        "templates/attendenceTable.js",
+        "templates/overtimeTemplate.js",
+        "templates/normalHandlebars.js",
+        "templates/overtimeHandlebars.js"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD"
+}
